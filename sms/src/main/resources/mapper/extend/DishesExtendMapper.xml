@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.order.sms.mapper.extend.DishesExtendMapper">
+
+  <select id="selectAll" resultMap="dishesExtendResultMap">
+    select * from btsf_dishes;
+  </select>
+  <resultMap
+          id="dishesExtendResultMap"
+          extends="com.briup.order.sms.mapper.DishesMapper.BaseResultMap"
+          type="com.briup.order.sms.bean.extend.DishesExtend">
+    <!--由于继承了BaseResultMap，所以不用映射id、name..-->
+    <association
+            property="classify"
+            column="dishes_classify_id"
+            select="com.briup.order.sms.mapper.ClassifyMapper.selectByPrimaryKey"></association>
+  </resultMap>
+
+
+</mapper>
