@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:background="#05000000"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/llhomepage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/ivhomepage"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="#00000000"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/homepage" />
+            <TextView
+                android:id="@+id/tvhomepage"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="  首 页"
+                android:textSize="10dp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llindent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/ivindent"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="#00000000"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/indent" />
+            <TextView
+                android:id="@+id/tvindent"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="  菜 单"
+                android:textSize="10dp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/ivme"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:background="#00000000"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/me" />
+            <TextView
+                android:id="@+id/tvme"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="  我 的"
+                android:textSize="10dp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

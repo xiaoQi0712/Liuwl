@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/reg_fh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/xfanhui"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="欢迎注册"
+        android:textSize="30dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/reg_phone"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="请输入手机号"/>
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="请输入密码"/>
+    <Button
+        android:id="@+id/reg_zc"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/log_btn_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="注册"
+        android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/reg_dlyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="登录用户"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="注册代表你已同意本店用户协议、隐私政策"
+        android:textSize="10dp"/>
+
+</LinearLayout>
